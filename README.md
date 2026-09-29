@@ -1,6 +1,8 @@
 # ATKFUT — Landing page (versão Ledger)
 
-Visual escuro, estilo app/painel, com **simulador interativo**: o visitante informa preço pago, preço de venda, outros custos e peças vendidas, e vê a conta com os números dele.
+Visual escuro com a paleta do site original (verde neon `#22e06a` sobre verde-escuro `#04100a`), mock realista do app no topo e **simulador interativo**: o visitante informa preço pago, preço de venda, outros custos e peças vendidas, e vê a conta com os números dele.
+
+As camisas mostradas são ilustrações SVG genéricas (sem escudo ou marca), para não usar propriedade intelectual de terceiros na página.
 
 - Ao vivo: https://paulo-henr1que.github.io/atkfut-landing-ledger/
 - Outra variação (clara/editorial): https://github.com/Paulo-Henr1que/atkfut-landing-catalogo
