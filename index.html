@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATKFUT — Revenda direto do fornecedor</title>
+<meta name="description" content="Revenda camisas de futebol com fornecimento direto de fábrica, pedido mínimo de 5 peças e acompanhamento pelo app.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">ATK<span>FUT</span></div>
+    <a href="#comecar" class="btn btn-ghost">Começar agora</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Fornecedor atacadista · pedido mínimo de 5 peças</p>
+        <h1>Revenda camisas de futebol sem manter estoque parado</h1>
+        <p class="lead">Compre direto de fábrica, defina seu preço de venda e acompanhe pedidos, faturamento e reposição num único app.</p>
+        <div class="hero-ctas">
+          <a href="#comecar" class="btn btn-primary">Ver como funciona</a>
+          <a href="#simulador" class="btn btn-outline">Simular meu ganho</a>
+        </div>
+        <p class="fine-print">Site não afiliado a clubes, ligas ou marcas esportivas. Consulte a seção de conformidade antes de anunciar este link.</p>
+      </div>
+
+      <div class="hero-panel" aria-label="Painel ilustrativo do app">
+        <div class="panel-head">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="panel-title">app do revendedor · exemplo</span>
+        </div>
+        <div class="panel-body">
+          <div class="stat-row">
+            <div class="stat">
+              <span class="stat-label">Pedidos no mês</span>
+              <span class="stat-value">18</span>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Peças vendidas</span>
+              <span class="stat-value">94</span>
+            </div>
+          </div>
+          <div class="stat-highlight">
+            <span class="stat-label">Faturamento estimado no mês <em>(exemplo ilustrativo)</em></span>
+            <span class="stat-value-big">R$ 6.100</span>
+            <span class="stat-note">Calculado sobre um preço médio de revenda hipotético. Seu resultado depende do seu preço, volume e mercado local.</span>
+          </div>
+          <div class="stat-bar">
+            <div class="bar-fill" style="width:64%"></div>
+          </div>
+          <span class="stat-note">64% da meta de reposição do mês</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALERTA DE CONFORMIDADE -->
+  <section class="compliance">
+    <div class="wrap compliance-box">
+      <h2>Antes de rodar anúncios: o que muda em relação ao site original</h2>
+      <ul>
+        <li><strong>Sem "fornecedor oficial".</strong> Trocado por "fornecedor atacadista" — a palavra "oficial" ao lado de marcas de terceiros é o tipo de alegação que a política de bens falsificados do Google e do TikTok rejeita direto.</li>
+        <li><strong>Sem valor de lucro como promessa fixa.</strong> Os números aparecem como simulação, com aviso ao lado, não como resultado garantido — isso ainda não elimina o risco de a categoria cair em "oportunidade de negócio" nas duas plataformas, mas reduz a chance de reprovação automática por alegação de ganho.</li>
+        <li><strong>Marcas e escudos de clubes não aparecem</strong> nesta página nem devem aparecer nas imagens de anúncio — isso é uma exigência de propriedade intelectual, não uma escolha de estilo.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="steps" id="comecar">
+    <div class="wrap">
+      <h2 class="section-title">Como funciona</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <span class="step-n">01</span>
+          <h3>Escolha as peças</h3>
+          <p>Catálogo com preço de fábrica por peça, sem precisar comprar lote fechado.</p>
+        </div>
+        <div class="step">
+          <span class="step-n">02</span>
+          <h3>Peça a partir de 5 unidades</h3>
+          <p>Pedido mínimo baixo para testar demanda antes de comprometer capital.</p>
+        </div>
+        <div class="step">
+          <span class="step-n">03</span>
+          <h3>Defina seu preço</h3>
+          <p>Você decide a margem de revenda de acordo com seu público e canal de venda.</p>
+        </div>
+        <div class="step">
+          <span class="step-n">04</span>
+          <h3>Acompanhe pelo app</h3>
+          <p>Pedidos, envio e reposição num painel só, sem planilha paralela.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMULADOR -->
+  <section class="simulator" id="simulador">
+    <div class="wrap sim-grid">
+      <div>
+        <h2 class="section-title">Simulador de faturamento</h2>
+        <p class="section-sub">Ferramenta ilustrativa. Ajuste as variáveis para ver como o resultado muda — não é uma promessa de ganho.</p>
+        <div class="sim-controls">
+          <label>Peças vendidas por mês
+            <input type="range" min="5" max="120" value="30" id="qtyRange">
+            <span id="qtyOut">30 peças</span>
+          </label>
+          <label>Margem por peça (R$)
+            <input type="range" min="30" max="150" value="70" id="marginRange">
+            <span id="marginOut">R$ 70</span>
+          </label>
+        </div>
+      </div>
+      <div class="sim-result">
+        <span class="stat-label">Resultado estimado do mês</span>
+        <span class="stat-value-big" id="simTotal">R$ 2.100</span>
+        <span class="stat-note">Estimativa simples (peças × margem). Não considera frete, impostos, tempo dedicado ou taxa de conversão de vendas — pode ser bem diferente na prática.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="wrap">
+      <h2 class="section-title">Tudo no app</h2>
+      <div class="features-grid">
+        <div class="feature"><h3>Catálogo atualizado</h3><p>Disponibilidade e preço de fábrica em tempo real.</p></div>
+        <div class="feature"><h3>Rastreio de pedido</h3><p>Status de produção e envio sem precisar perguntar.</p></div>
+        <div class="feature"><h3>Histórico de compras</h3><p>Reposição rápida do que já vendeu bem.</p></div>
+        <div class="feature"><h3>Suporte direto</h3><p>Canal com o fornecedor para dúvidas de pedido.</p></div>
+        <div class="feature"><h3>Preço por faixa</h3><p>Tabela clara por quantidade, sem negociação manual.</p></div>
+        <div class="feature"><h3>Alertas de estoque</h3><p>Aviso quando um item que você vende está acabando.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="testimonials">
+    <div class="wrap">
+      <h2 class="section-title">O que revendedores relatam</h2>
+      <p class="section-sub">Relatos individuais, não representam resultado típico ou garantido.</p>
+      <div class="testi-grid">
+        <blockquote>
+          <p>"Comecei com o pedido mínimo pra testar antes de comprar mais. Ajudou a não travar dinheiro logo de cara."</p>
+          <cite>— Revendedor, SP</cite>
+        </blockquote>
+        <blockquote>
+          <p>"O que eu mais uso é o rastreio de pedido, evita ficar cobrando novidade toda hora."</p>
+          <cite>— Revendedora, MG</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Levou um tempo até eu entender qual faixa de preço funcionava no meu público."</p>
+          <cite>— Revendedor, BA</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <div class="wrap">
+      <h2>Quer testar com um pedido pequeno primeiro?</h2>
+      <p>Comece com 5 peças e avalie o resultado no seu próprio ritmo.</p>
+      <a href="#" class="btn btn-primary">Baixar o app</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand">ATK<span>FUT</span></div>
+      <p class="fine-print">ATKFUT Intermediações Ltda. — CNPJ 00.000.000/0001-00 (placeholder, substituir pelo CNPJ real antes de publicar).</p>
+    </div>
+    <div class="disclaimer">
+      <p><strong>Aviso legal.</strong> Este site não é afiliado, patrocinado ou endossado por nenhuma marca esportiva, liga, clube ou fabricante de material esportivo. Os valores de faturamento e lucro exibidos são simulações e exemplos ilustrativos; não constituem promessa, garantia ou estimativa de resultado típico. O desempenho de cada revendedor varia conforme preço praticado, volume de vendas, mercado local e demais fatores fora do controle da ATKFUT.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const qtyRange = document.getElementById('qtyRange');
+  const marginRange = document.getElementById('marginRange');
+  const qtyOut = document.getElementById('qtyOut');
+  const marginOut = document.getElementById('marginOut');
+  const simTotal = document.getElementById('simTotal');
+
+  function updateSim(){
+    const qty = parseInt(qtyRange.value);
+    const margin = parseInt(marginRange.value);
+    qtyOut.textContent = qty + ' peças';
+    marginOut.textContent = 'R$ ' + margin;
+    const total = qty * margin;
+    simTotal.textContent = 'R$ ' + total.toLocaleString('pt-BR');
+  }
+  qtyRange.addEventListener('input', updateSim);
+  marginRange.addEventListener('input', updateSim);
+  updateSim();
+</script>
+</body>
+</html>
