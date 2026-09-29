@@ -3,102 +3,168 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ATKFUT — Revenda direto do fornecedor</title>
-<meta name="description" content="Revenda camisas de futebol com fornecimento direto de fábrica, pedido mínimo de 5 peças e acompanhamento pelo app.">
+<title>ATKFUT — Camisas de time no atacado, a partir de 5 peças</title>
+<meta name="description" content="Compre camisas de time direto do fornecedor pelo app ATKFUT. Pedido mínimo de 5 peças, você escolhe os times e modelos e revende no seu canal.">
+<meta name="theme-color" content="#0e1520">
+<meta property="og:title" content="ATKFUT — Camisas de time no atacado, a partir de 5 peças">
+<meta property="og:description" content="Pedido mínimo de 5 peças, catálogo e pagamento pelo app. Faça a conta com os seus números antes de começar.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230e1520'/%3E%3Cpath d='M30 22 L42 18 Q50 26 58 18 L70 22 L86 36 L78 48 L70 44 L70 84 L30 84 L30 44 L22 48 L14 36 Z' fill='%23e8a33d'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- camisa genérica, sem escudo nem marca -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <clipPath id="shirt-clip"><path d="M30 10 L42 6 Q50 14 58 6 L70 10 L90 26 L81 40 L72 35 L72 92 L28 92 L28 35 L19 40 L10 26 Z"/></clipPath>
+    <symbol id="shirt" viewBox="0 0 100 100">
+      <path d="M30 10 L42 6 Q50 14 58 6 L70 10 L90 26 L81 40 L72 35 L72 92 L28 92 L28 35 L19 40 L10 26 Z" style="fill:var(--shirt-base,#e8a33d)"/>
+      <g clip-path="url(#shirt-clip)" style="fill:var(--shirt-stripe,#0e1520)">
+        <rect x="0" y="30" width="100" height="10"/>
+        <rect x="0" y="52" width="100" height="10"/>
+        <rect x="0" y="74" width="100" height="10"/>
+      </g>
+      <path d="M42 6 Q50 14 58 6" fill="none" stroke="rgba(0,0,0,.35)" stroke-width="2"/>
+    </symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
 <header class="topbar">
   <div class="wrap topbar-inner">
-    <div class="brand">ATK<span>FUT</span></div>
-    <a href="#comecar" class="btn btn-ghost">Começar agora</a>
+    <a href="#" class="brand" aria-label="ATKFUT, início">ATK<span>FUT</span></a>
+    <nav class="nav-links" aria-label="Seções">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#simulador">Faça a conta</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a href="#baixar" class="btn btn-primary btn-sm">Baixar o app</a>
   </div>
 </header>
 
-<main>
+<main id="conteudo">
+
   <!-- HERO -->
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Fornecedor atacadista · pedido mínimo de 5 peças</p>
-        <h1>Revenda camisas de futebol sem manter estoque parado</h1>
-        <p class="lead">Compre direto de fábrica, defina seu preço de venda e acompanhe pedidos, faturamento e reposição num único app.</p>
-        <div class="hero-ctas">
-          <a href="#comecar" class="btn btn-primary">Ver como funciona</a>
-          <a href="#simulador" class="btn btn-outline">Simular meu ganho</a>
+        <p class="eyebrow">Fornecedor atacadista · app ATKFUT</p>
+        <h1>Camisas de time no atacado, a partir de <span class="hl">5 peças</span></h1>
+        <p class="lead">Escolha os times e modelos no catálogo do app, feche um pedido pequeno e revenda pelo seu Instagram, WhatsApp ou marketplace. O preço de venda é você quem define.</p>
+
+        <div class="store-buttons">
+          <a class="store-btn" href="https://apps.apple.com/br/app/atkfut/id6754094628" target="_blank" rel="noopener">
+            <span class="store-kicker">Baixar na</span>
+            <span class="store-name">App Store</span>
+          </a>
+          <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.foxappy.atkfut" target="_blank" rel="noopener">
+            <span class="store-kicker">Disponível no</span>
+            <span class="store-name">Google Play</span>
+          </a>
         </div>
-        <p class="fine-print">Site não afiliado a clubes, ligas ou marcas esportivas. Consulte a seção de conformidade antes de anunciar este link.</p>
+
+        <ul class="facts">
+          <li>Pedido mínimo de 5 peças</li>
+          <li>Você escolhe times e modelos</li>
+          <li>Compra e pagamento pelo app</li>
+        </ul>
       </div>
 
-      <div class="hero-panel" aria-label="Painel ilustrativo do app">
-        <div class="panel-head">
-          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-          <span class="panel-title">app do revendedor · exemplo</span>
-        </div>
-        <div class="panel-body">
-          <div class="stat-row">
-            <div class="stat">
-              <span class="stat-label">Pedidos no mês</span>
-              <span class="stat-value">18</span>
-            </div>
-            <div class="stat">
-              <span class="stat-label">Peças vendidas</span>
-              <span class="stat-value">94</span>
+      <!-- mock do app: só recursos que o app realmente tem -->
+      <div class="phone" role="img" aria-label="Ilustração do app ATKFUT: catálogo, oferta da vez e carrinho com 5 peças">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="app-toast">
+            <span class="toast-dot"></span>
+            <div>
+              <strong>Oferta nova no catálogo</strong>
+              <span>Toque para ver a oferta da vez</span>
             </div>
           </div>
-          <div class="stat-highlight">
-            <span class="stat-label">Faturamento estimado no mês <em>(exemplo ilustrativo)</em></span>
-            <span class="stat-value-big">R$ 6.100</span>
-            <span class="stat-note">Calculado sobre um preço médio de revenda hipotético. Seu resultado depende do seu preço, volume e mercado local.</span>
+
+          <div class="app-head">
+            <span>Catálogo</span>
+            <span class="app-chip">Todos os times</span>
           </div>
-          <div class="stat-bar">
-            <div class="bar-fill" style="width:64%"></div>
+
+          <div class="app-grid">
+            <div class="app-item"><svg style="--shirt-base:#c8323c;--shirt-stripe:#15151a"><use href="#shirt"/></svg><span>Listrada</span><em>2 no carrinho</em></div>
+            <div class="app-item"><svg style="--shirt-base:#f2f2ee;--shirt-stripe:#1e5fb4"><use href="#shirt"/></svg><span>Branca</span><em>1 no carrinho</em></div>
+            <div class="app-item"><svg style="--shirt-base:#1f7a4a;--shirt-stripe:#f2f2ee"><use href="#shirt"/></svg><span>Verde</span><em>2 no carrinho</em></div>
+            <div class="app-item"><svg style="--shirt-base:#1b2a52;--shirt-stripe:#1b2a52"><use href="#shirt"/></svg><span>Marinho</span><em>—</em></div>
           </div>
-          <span class="stat-note">64% da meta de reposição do mês</span>
+
+          <div class="app-cart">
+            <div class="cart-row">
+              <span>Carrinho</span>
+              <strong>5 peças</strong>
+            </div>
+            <div class="cart-bar"><div class="cart-fill"></div></div>
+            <span class="cart-ok">Pedido mínimo atingido</span>
+            <span class="app-cta">Finalizar pedido</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ALERTA DE CONFORMIDADE -->
-  <section class="compliance">
-    <div class="wrap compliance-box">
-      <h2>Antes de rodar anúncios: o que muda em relação ao site original</h2>
-      <ul>
-        <li><strong>Sem "fornecedor oficial".</strong> Trocado por "fornecedor atacadista" — a palavra "oficial" ao lado de marcas de terceiros é o tipo de alegação que a política de bens falsificados do Google e do TikTok rejeita direto.</li>
-        <li><strong>Sem valor de lucro como promessa fixa.</strong> Os números aparecem como simulação, com aviso ao lado, não como resultado garantido — isso ainda não elimina o risco de a categoria cair em "oportunidade de negócio" nas duas plataformas, mas reduz a chance de reprovação automática por alegação de ganho.</li>
-        <li><strong>Marcas e escudos de clubes não aparecem</strong> nesta página nem devem aparecer nas imagens de anúncio — isso é uma exigência de propriedade intelectual, não uma escolha de estilo.</li>
-      </ul>
+  <!-- PARA QUEM É -->
+  <section class="fit">
+    <div class="wrap">
+      <h2 class="section-title">É pra você?</h2>
+      <p class="section-sub">Revenda dá trabalho: exige divulgar, atender e entregar. Vale olhar os dois lados antes de fazer o primeiro pedido.</p>
+      <div class="fit-grid">
+        <div class="fit-card fit-yes">
+          <h3>Faz sentido se você…</h3>
+          <ul>
+            <li>já vende, ou quer vender, pelo Instagram, WhatsApp ou marketplace;</li>
+            <li>quer testar alguns modelos antes de comprar volume;</li>
+            <li>prefere comprar e pagar tudo pelo celular.</li>
+          </ul>
+        </div>
+        <div class="fit-card fit-no">
+          <h3>Talvez não seja pra você se…</h3>
+          <ul>
+            <li>procura renda garantida ou sem esforço;</li>
+            <li>não pretende divulgar os produtos nem atender clientes;</li>
+            <li>não tem como reservar tempo para vender e entregar.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- COMO FUNCIONA -->
-  <section class="steps" id="comecar">
+  <section class="steps" id="como-funciona">
     <div class="wrap">
       <h2 class="section-title">Como funciona</h2>
-      <div class="steps-grid">
-        <div class="step">
+      <ol class="steps-grid">
+        <li class="step">
           <span class="step-n">01</span>
-          <h3>Escolha as peças</h3>
-          <p>Catálogo com preço de fábrica por peça, sem precisar comprar lote fechado.</p>
-        </div>
-        <div class="step">
+          <h3>Baixe o app</h3>
+          <p>O ATKFUT é gratuito na App Store e no Google Play.</p>
+        </li>
+        <li class="step">
           <span class="step-n">02</span>
-          <h3>Peça a partir de 5 unidades</h3>
-          <p>Pedido mínimo baixo para testar demanda antes de comprometer capital.</p>
-        </div>
-        <div class="step">
+          <h3>Monte seu pedido</h3>
+          <p>Escolha 5 peças ou mais, dos times e modelos que quiser.</p>
+        </li>
+        <li class="step">
           <span class="step-n">03</span>
-          <h3>Defina seu preço</h3>
-          <p>Você decide a margem de revenda de acordo com seu público e canal de venda.</p>
-        </div>
-        <div class="step">
+          <h3>Anuncie e venda</h3>
+          <p>Divulgue no seu Instagram, WhatsApp ou marketplace, com o preço que você definir.</p>
+        </li>
+        <li class="step">
           <span class="step-n">04</span>
-          <h3>Acompanhe pelo app</h3>
-          <p>Pedidos, envio e reposição num painel só, sem planilha paralela.</p>
-        </div>
-      </div>
+          <h3>Repita o pedido</h3>
+          <p>Voltou a ter procura? Faça um novo pedido quando fizer sentido pra você.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -106,70 +172,134 @@
   <section class="simulator" id="simulador">
     <div class="wrap sim-grid">
       <div>
-        <h2 class="section-title">Simulador de faturamento</h2>
-        <p class="section-sub">Ferramenta ilustrativa. Ajuste as variáveis para ver como o resultado muda — não é uma promessa de ganho.</p>
+        <h2 class="section-title">Faça a conta com os seus números</h2>
+        <p class="section-sub">Não existe um valor de lucro fixo: depende do preço que você paga, do preço que você cobra e de quantas peças consegue vender. Ajuste abaixo com a sua realidade.</p>
+
         <div class="sim-controls">
-          <label>Peças vendidas por mês
-            <input type="range" min="5" max="120" value="30" id="qtyRange">
-            <span id="qtyOut">30 peças</span>
-          </label>
-          <label>Margem por peça (R$)
-            <input type="range" min="30" max="150" value="70" id="marginRange">
-            <span id="marginOut">R$ 70</span>
-          </label>
+          <div class="control">
+            <label for="cost">Preço pago por peça no app</label>
+            <input type="range" id="cost" min="40" max="250" step="5" value="90">
+            <output for="cost" id="costOut">R$ 90</output>
+          </div>
+          <div class="control">
+            <label for="price">Seu preço de venda por peça</label>
+            <input type="range" id="price" min="50" max="400" step="5" value="170">
+            <output for="price" id="priceOut">R$ 170</output>
+          </div>
+          <div class="control">
+            <label for="extra">Outros custos por peça <small>(frete, embalagem, taxas)</small></label>
+            <input type="range" id="extra" min="0" max="80" step="1" value="15">
+            <output for="extra" id="extraOut">R$ 15</output>
+          </div>
+          <div class="control">
+            <label for="qty">Peças vendidas no mês</label>
+            <input type="range" id="qty" min="5" max="150" step="1" value="20">
+            <output for="qty" id="qtyOut">20 peças</output>
+          </div>
         </div>
       </div>
-      <div class="sim-result">
-        <span class="stat-label">Resultado estimado do mês</span>
-        <span class="stat-value-big" id="simTotal">R$ 2.100</span>
-        <span class="stat-note">Estimativa simples (peças × margem). Não considera frete, impostos, tempo dedicado ou taxa de conversão de vendas — pode ser bem diferente na prática.</span>
+
+      <div class="sim-result" aria-live="polite">
+        <span class="res-label">Resultado da sua simulação</span>
+        <dl class="res-list">
+          <div><dt>Receita das vendas</dt><dd id="revOut">R$ 3.400</dd></div>
+          <div><dt>Custo das peças + outros custos</dt><dd id="costTotalOut">R$ 2.100</dd></div>
+          <div class="res-total"><dt>Diferença antes de impostos</dt><dd id="diffOut">R$ 1.300</dd></div>
+        </dl>
+        <p class="res-note">Conta feita apenas com os valores que você informou. Não inclui impostos e não garante que as peças serão vendidas. Não é uma promessa de ganho.</p>
       </div>
     </div>
   </section>
 
-  <!-- FEATURES -->
+  <!-- RECURSOS -->
   <section class="features">
     <div class="wrap">
-      <h2 class="section-title">Tudo no app</h2>
+      <h2 class="section-title">O que tem no app</h2>
       <div class="features-grid">
-        <div class="feature"><h3>Catálogo atualizado</h3><p>Disponibilidade e preço de fábrica em tempo real.</p></div>
-        <div class="feature"><h3>Rastreio de pedido</h3><p>Status de produção e envio sem precisar perguntar.</p></div>
-        <div class="feature"><h3>Histórico de compras</h3><p>Reposição rápida do que já vendeu bem.</p></div>
-        <div class="feature"><h3>Suporte direto</h3><p>Canal com o fornecedor para dúvidas de pedido.</p></div>
-        <div class="feature"><h3>Preço por faixa</h3><p>Tabela clara por quantidade, sem negociação manual.</p></div>
-        <div class="feature"><h3>Alertas de estoque</h3><p>Aviso quando um item que você vende está acabando.</p></div>
+        <div class="feature"><h3>Catálogo de camisas</h3><p>Times e modelos para escolher e montar o pedido.</p></div>
+        <div class="feature"><h3>Preço de fornecedor</h3><p>Você compra direto da fonte, sem intermediário no meio.</p></div>
+        <div class="feature"><h3>Pedido mínimo baixo</h3><p>Comece com 5 peças, sem precisar de capital alto.</p></div>
+        <div class="feature"><h3>Ofertas no app</h3><p>Promoções que aparecem só dentro do aplicativo.</p></div>
+        <div class="feature"><h3>Notificação de oferta</h3><p>Aviso no celular quando entra promoção nova no catálogo.</p></div>
+        <div class="feature"><h3>Pagamento pelo app</h3><p>Checkout direto no aplicativo, sem sair pra outro site.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- DEPOIMENTOS -->
-  <section class="testimonials">
+  <!-- AVALIAÇÕES -->
+  <section class="reviews">
     <div class="wrap">
-      <h2 class="section-title">O que revendedores relatam</h2>
-      <p class="section-sub">Relatos individuais, não representam resultado típico ou garantido.</p>
-      <div class="testi-grid">
-        <blockquote>
-          <p>"Comecei com o pedido mínimo pra testar antes de comprar mais. Ajudou a não travar dinheiro logo de cara."</p>
-          <cite>— Revendedor, SP</cite>
-        </blockquote>
-        <blockquote>
-          <p>"O que eu mais uso é o rastreio de pedido, evita ficar cobrando novidade toda hora."</p>
-          <cite>— Revendedora, MG</cite>
-        </blockquote>
-        <blockquote>
-          <p>"Levou um tempo até eu entender qual faixa de preço funcionava no meu público."</p>
-          <cite>— Revendedor, BA</cite>
-        </blockquote>
+      <h2 class="section-title">O que clientes dizem</h2>
+      <p class="section-sub">Avaliações de clientes publicadas pela ATKFUT. Opiniões individuais sobre a experiência de compra.</p>
+      <div class="reviews-grid">
+        <figure class="review">
+          <blockquote>“Compro com o João e com a ATK há mais de 4 anos, sempre muito top!”</blockquote>
+          <figcaption>Pedro Alves Marques</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>“Já comprei mais de 10x e recomendo demais!”</blockquote>
+          <figcaption>Ivan Furtado</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>“Amei o aplicativo, facilita muito minhas compras e recebo informações quando tem promoção.”</blockquote>
+          <figcaption>Lella_21</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>“Bom demais, recomendo pra uso próprio ou revenda.”</blockquote>
+          <figcaption>Bruno C.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="duvidas">
+    <div class="wrap faq-wrap">
+      <h2 class="section-title">Dúvidas frequentes</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Qual é o pedido mínimo?</summary>
+          <p>5 peças por pedido. Você pode misturar times e modelos para chegar nesse total.</p>
+        </details>
+        <details>
+          <summary>Quanto eu vou ganhar revendendo?</summary>
+          <p>Não dá para prometer um valor. O resultado depende do preço que você paga, do preço que você cobra, dos seus custos de envio e divulgação e de quantas peças você vende. Use o simulador acima para fazer a conta com os seus números.</p>
+        </details>
+        <details>
+          <summary>Preciso comprar um estoque grande para começar?</summary>
+          <p>Não. Com o mínimo de 5 peças dá para testar a procura antes de fazer pedidos maiores.</p>
+        </details>
+        <details>
+          <summary>Como faço o pedido e o pagamento?</summary>
+          <p>Tudo pelo app: você escolhe as peças no catálogo, monta o carrinho e finaliza o pagamento no próprio aplicativo.</p>
+        </details>
+        <details>
+          <summary>A ATKFUT é ligada a algum clube ou marca esportiva?</summary>
+          <p>Não. A ATKFUT não é afiliada, patrocinada nem endossada por clubes, ligas ou marcas esportivas.</p>
+        </details>
+        <details>
+          <summary>Onde baixo o app?</summary>
+          <p>Na <a href="https://apps.apple.com/br/app/atkfut/id6754094628" target="_blank" rel="noopener">App Store</a> (iPhone) e no <a href="https://play.google.com/store/apps/details?id=com.foxappy.atkfut" target="_blank" rel="noopener">Google Play</a> (Android). O download é gratuito.</p>
+        </details>
       </div>
     </div>
   </section>
 
   <!-- CTA FINAL -->
-  <section class="cta-final">
-    <div class="wrap">
-      <h2>Quer testar com um pedido pequeno primeiro?</h2>
-      <p>Comece com 5 peças e avalie o resultado no seu próprio ritmo.</p>
-      <a href="#" class="btn btn-primary">Baixar o app</a>
+  <section class="cta-final" id="baixar">
+    <div class="wrap cta-inner">
+      <h2>Comece com um pedido pequeno</h2>
+      <p>Baixe o app, veja o catálogo e decida com calma. O download é gratuito.</p>
+      <div class="store-buttons store-center">
+        <a class="store-btn" href="https://apps.apple.com/br/app/atkfut/id6754094628" target="_blank" rel="noopener">
+          <span class="store-kicker">Baixar na</span>
+          <span class="store-name">App Store</span>
+        </a>
+        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.foxappy.atkfut" target="_blank" rel="noopener">
+          <span class="store-kicker">Disponível no</span>
+          <span class="store-name">Google Play</span>
+        </a>
+      </div>
     </div>
   </section>
 </main>
@@ -178,31 +308,39 @@
   <div class="wrap footer-grid">
     <div>
       <div class="brand">ATK<span>FUT</span></div>
-      <p class="fine-print">ATKFUT Intermediações Ltda. — CNPJ 00.000.000/0001-00 (placeholder, substituir pelo CNPJ real antes de publicar).</p>
+      <p class="fine-print">ATKFUT Intermediações Ltda.<!-- TODO: inserir CNPJ aqui --></p>
+      <p class="fine-print">© 2026 ATKFUT · Todos os direitos reservados</p>
     </div>
-    <div class="disclaimer">
-      <p><strong>Aviso legal.</strong> Este site não é afiliado, patrocinado ou endossado por nenhuma marca esportiva, liga, clube ou fabricante de material esportivo. Os valores de faturamento e lucro exibidos são simulações e exemplos ilustrativos; não constituem promessa, garantia ou estimativa de resultado típico. O desempenho de cada revendedor varia conforme preço praticado, volume de vendas, mercado local e demais fatores fora do controle da ATKFUT.</p>
-    </div>
+    <p class="disclaimer">Este site não é afiliado, patrocinado ou endossado por nenhuma marca esportiva, liga ou clube. Os valores exibidos na simulação são calculados a partir dos números informados pelo próprio visitante e não constituem promessa, garantia ou estimativa de resultado. O resultado de cada revendedor varia conforme preço de compra e de venda, custos, volume vendido e outros fatores fora do controle da ATKFUT.</p>
   </div>
 </footer>
 
 <script>
-  const qtyRange = document.getElementById('qtyRange');
-  const marginRange = document.getElementById('marginRange');
-  const qtyOut = document.getElementById('qtyOut');
-  const marginOut = document.getElementById('marginOut');
-  const simTotal = document.getElementById('simTotal');
+  const $ = (id) => document.getElementById(id);
+  const brl = (n) => (n < 0 ? '− ' : '') + 'R$ ' + Math.abs(Math.round(n)).toLocaleString('pt-BR');
 
   function updateSim(){
-    const qty = parseInt(qtyRange.value);
-    const margin = parseInt(marginRange.value);
-    qtyOut.textContent = qty + ' peças';
-    marginOut.textContent = 'R$ ' + margin;
-    const total = qty * margin;
-    simTotal.textContent = 'R$ ' + total.toLocaleString('pt-BR');
+    const cost = +$('cost').value;
+    const price = +$('price').value;
+    const extra = +$('extra').value;
+    const qty = +$('qty').value;
+
+    $('costOut').textContent = brl(cost);
+    $('priceOut').textContent = brl(price);
+    $('extraOut').textContent = brl(extra);
+    $('qtyOut').textContent = qty + (qty === 1 ? ' peça' : ' peças');
+
+    const revenue = price * qty;
+    const totalCost = (cost + extra) * qty;
+    const diff = revenue - totalCost;
+
+    $('revOut').textContent = brl(revenue);
+    $('costTotalOut').textContent = brl(totalCost);
+    $('diffOut').textContent = brl(diff);
+    $('diffOut').classList.toggle('negative', diff < 0);
   }
-  qtyRange.addEventListener('input', updateSim);
-  marginRange.addEventListener('input', updateSim);
+
+  ['cost','price','extra','qty'].forEach(id => $(id).addEventListener('input', updateSim));
   updateSim();
 </script>
 </body>
